@@ -1,0 +1,34 @@
+{
+  "name": "bitcoin-webhook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "babel src --extensions \".js\" --out-dir dist --copy-files --no-copy-ignored",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Vagner Ribeiro",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "bitcoind-rpc": "^0.9.1",
+    "bitcoinjs-lib": "^6.0.1",
+    "express": "^4.17.2",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.16.1"
+  }
+}
